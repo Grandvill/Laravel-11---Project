@@ -9,8 +9,7 @@
             <a href="/categories/{{ $post->category->slug }}" class="hover:underline text-base text-gray-500 ">{{ $post->category->name }}</a>
             | {{ $post->created_at->diffForHumans() }}
         </div>
-        <img src="{{ url('img/banjir.jpg') }}" class=" object-center w-100" alt="...">
-        <p class="my-4 font-light">{{ $post['body'] }}</p>
+        <p class="my-4 font-light items-baseline" style="line-height: 2; text-align: justify;">{{ $post['body'] }}</p>
         <a href="/posts" class="font-medium text-blue-500 hover:underline">&laquo; Back to Posts</a>
     </article>
 </x-layout>
