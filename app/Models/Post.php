@@ -12,6 +12,8 @@ class Post extends Model
     use HasFactory;
     protected $fillable = ['title', 'author_id', 'slug', 'body'];
 
+    protected $with = ['category', 'author'];
+
     //untuk menghubungkan table post dengan table user (Defining the Inverse of the Relationship)
     public function author(): BelongsTo
     {
