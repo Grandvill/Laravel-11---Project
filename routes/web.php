@@ -18,8 +18,8 @@ Route::get('/about', function () {
 Route::get('/posts', function () {
     // Eager Loading, relasi pada array harus sesuai dengan yang ada pada model (post.php)
     // $posts = Post::with(['author', 'category'])->latest()->get();
-    $posts = Post::latest()->get();
-    return view('posts', ['title' => 'Blog', 'posts'=> $posts]);
+    // Model Post (scopeFilter)
+    return view('posts', ['title' => 'Blog', 'posts'=> Post::filter(request(['search', 'category', 'author']))->latest()->get()]);
 });
 
 Route::get('/posts/{post:slug}', function(Post $post) {
