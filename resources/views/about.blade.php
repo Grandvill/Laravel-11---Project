@@ -26,7 +26,7 @@
 
               </div>
 
-              <div class="d-md-flex post-entry-2 half" style="margin-top: 100px">
+              <div class="d-md-flex " style="margin-top: 100px">
                 <a href="#" class="me-4 thumbnail order-2">
                   <img src="{{ url('img/post-landscape-1.jpg') }}" alt="" class="img-fluid" style="height: 400px; width: 2800px; margin-left: 40px">
                 </a>

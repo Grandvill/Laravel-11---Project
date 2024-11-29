@@ -31,17 +31,17 @@
                     </ul>
                 </div>
                 <div class="col-md">
-                    <img class="img-fluid d-none d-none d-sm-block ml-20" src="{{ url('img/contact.svg') }}" alt="header" />
+                    <img class="img-fluid d-none d-sm-block ml-20" src="{{ url('img/contact.svg') }}" alt="header" />
                 </div>
             </div>
         </div>
+
     </section>
 
-    <div class="mt-36">
-        <h1 style="font-size: 36px; justify-content: center;" class="text-center">Saran & Masukan</h1>
-    </div>
-
     <div class="container p-3">
+        <div class="mt-36">
+            <h1 style="text-center display-4" class="text-center">Saran & Masukan</h1>
+        </div>
         <form style="max-width: 800px; margin: 0 auto;">
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
@@ -60,6 +60,7 @@
             </div>
         </form>
     </div>
+
 
     {{-- map --}}
     <div class="container" style="padding-bottom: 30px; padding-top: 30px;">
